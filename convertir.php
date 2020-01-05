@@ -1,6 +1,4 @@
 <?php 
-
-echo shell_exec("prueba.sh");
-
-echo "no se han enviado datos";
-?>
+ $contents = file_get_contents('prueba.sh'); 
+ echo shell_exec($contents); 
+ ?>
